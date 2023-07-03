@@ -1,7 +1,7 @@
 const button = {
-  positive: document.querySelector("[data-action='increment']"),
-  negative: document.querySelector("[data-action='decrement']"),
-  span: document.querySelector("#value"),
+  positive: document.querySelector('[data-action=increment]'),
+  negative: document.querySelector('[data-action=decrement]'),
+  span: document.querySelector('#value'),
 };
 
 let counterValue = 0;
@@ -15,8 +15,8 @@ const decrement = () => {
   button.span.textContent = counterValue;
 };
 
-button.positive.addEventListener("click", increment);
-button.negative.addEventListener("click", decrement);
+button.positive.addEventListener('click', increment);
+button.negative.addEventListener('click', decrement);
 
 
 
